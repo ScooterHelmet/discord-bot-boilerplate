@@ -1,0 +1,10 @@
+#ignore dependency tree
+node_modules
+
+#ignore secrets 
+.env
+
+#ignore IDE files
+*.vscode
+*.idea
+.DS_store
