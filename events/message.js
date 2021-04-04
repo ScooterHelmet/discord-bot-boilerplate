@@ -1,22 +1,19 @@
 const kick = require("../commands/kick")
+const commands = require("../commands/commands")
 
 module.exports = (client, msg) => {
 
-  if (msg.content === "ping") {
-    msg.reply("Pong!")
+  switch (msg.content) {
+    case "ping":
+      msg.reply("Pong!");
+      break;
+    case "!kick":
+      kick(msg);
+      break;
+    case "!commands":
+      commands(msg);
+      break;
+    default:
+      return;
   }
-
-  if (msg.content.startsWith("!kick")) {
-    return kick(msg)
-  }
-
-  if (msg.content.startsWith("!")) {
-    return msg.react('🤔')
-    .then(console.log)
-    .catch(console.error);
-  }
-
-  // React to a message with a unicode emoji
-
-  
 }

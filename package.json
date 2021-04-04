@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord-oauth2": "^2.6.0",
     "discord.js": "^12.5.3"
   },
   "devDependencies": {

@@ -17,6 +17,6 @@ const maskEmailAddress = (message) => {
     });
 };
 
-module.exports = {
-  maskEmailAddress
-}
+module.exports = (client, msg) => {
+  maskEmailAddress(msg)
+};
