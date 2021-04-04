@@ -1,5 +1,5 @@
-const kick = require("../commands/kick")
 const commands = require("../commands/commands")
+const kick = require("../commands/kick")
 
 module.exports = (client, msg) => {
 

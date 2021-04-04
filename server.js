@@ -1,4 +1,4 @@
-const { apiEndpoint, clientID, clientSecret, test, token, port } = require(`./config`);
+const { apiEndpoint, clientID, clientSecret, token, port } = require(`./config`);
 const crypto = require('crypto')
 
 const Discord = require("discord.js")
@@ -42,7 +42,6 @@ const url = oauth.generateAuthUrl({
 
 console.log("\n" + url + "\n"); */
 
-
 console.log("Application running on port: " + port);
 
-client.login(test);
+client.login(token);
