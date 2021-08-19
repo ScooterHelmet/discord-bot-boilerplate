@@ -2,7 +2,7 @@
 
 **Install**
 ```shell
-cd /discord-bot-boilterplate
+cd discord-bot-boilerplate/
 npm install
 node server.js
 ```
