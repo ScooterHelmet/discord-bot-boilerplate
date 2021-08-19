@@ -1,7 +1,13 @@
-# Install 
-npm install
+[Requires Node v14.10 or higher](https://nodejs.org/en/)
 
-# Add env variables to local project .env file
+**Install **
+```shell
+cd /discord-bot-boilterplate
+npm install
+node server.js
+```
+   
+**ENVs for development purposes (i.e. `.env` file values)**
 ```
 DISCORD_BUILD_A_BOT_TOKEN=
 DISCORD_BUILD_A_BOT_USERNAME=
